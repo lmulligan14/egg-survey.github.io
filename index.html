@@ -1,0 +1,137 @@
+<div class='container'>
+  <header>
+    <h1 id='title'>Egg Survey</h1>
+    <p id='description'>How many eggs can you eat?</p>
+  </header>
+  
+  <form id='survey-form'>
+    <div class='form-group'>
+      <label id='name-label' for='name'>Name</label>
+      <input 
+        id='name' 
+        name='name'
+        class='form-control'
+        type='text'
+        placeholder='Enter your name'
+        required
+      />
+    </div>
+    
+    <div class='form-group'>
+      <label id='email-label' for='email'>Email</label>
+      <input
+        id='email'
+        name='email'
+        class='form-control'
+        type='email'
+        placeholder='Enter your Email'
+        required
+       />
+    </div>
+    
+    <div class='form-group'>
+      <label id='number-label' for='number'>Eggs</label>
+      <input 
+        id='number' 
+        name='eggs' 
+        class='form-control' 
+        type='number' 
+        min='0' max='99' 
+        placeholder='# of Eggs' 
+        required
+      />
+    </div>
+    
+    <div class='form-group'>
+      <label id='dropdown-label' for='dropdown'>What is your favorite egg?</label>
+      <select id='dropdown' name='dropdown' class='form-control' required>
+        <option disabled selected value>Choose a type</option>
+        <option value='White'>White</option>
+        <option value='Brown'>Brown</option>
+        <option value='Goose'>Goose</option>
+        <option value='Duck'>Duck</option>
+        <option value='Chicken'>Chicken</option>
+      </select>
+    </div>
+    
+    <div class='form-group'>
+      <label id='radio-label' for='user-recommend'>Would you recommend eggs?</label>
+      <label for='yes'>
+        <input
+          id='yes'
+          name='user-recommend'
+          type='radio'
+          value='yes'
+          class='input-radio'
+          checked
+        />Yes
+      </label>
+      <label for='no'>
+        <input id='no'
+               name='user-recommend'
+               type='radio'
+               value='no'
+               class='input-radio'
+        />No
+      </label>
+      <label for='unsure'>
+        <input id='unsure'
+               name='user-recommend'
+               type='radio'
+               value='unsure'
+               class='input-radio'
+        />Unsure
+      </label>
+    </div>
+    
+    <div class='form-group'>
+      <label id='checkbox-label' for='cook-eggs'>
+        How to cook eggs?<span>(Check all that apply)</span>
+      </label>
+      <label for='scramble'>
+        <input id='scramble'
+               name='cook-eggs'
+               type='checkbox'
+               value='scramble'
+               class='input-checkbox'
+        />Scramble
+      </label>
+      <label for='sunnyside'>
+        <input id='sunnyside'
+               name='cook-eggs'
+               type='checkbox'
+               value='sunnyside'
+               class='input-checkbox'
+        />Sunny-side Up
+      </label>
+      <label for='over-easy'>
+        <input id='over-easy'
+               name='cook-eggs'
+               type='checkbox'
+               value='over-easy'
+               class='input-checkbox'
+        />Over Easy
+      </label>
+      <label for='raw'>
+        <input id='raw'
+               name='cook-eggs'
+               type='checkbox'
+               value='raw'
+               class='input-checkbox'
+        />Raw
+      </label>
+    </div>
+    
+    <div class='form-group'>
+      <label id='feedback-label' for='feedback'>Additional egg comments:</label>
+      <textarea id='feedback'
+                name='feedback'
+                placeholder="Enter comments here..."
+      ></textarea>
+    </div>
+    
+    <div class='form-group'>
+      <button id='submit' name='submit'>Submit</button>
+    </div>
+  </form>
+</div>
